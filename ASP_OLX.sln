@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP_OLX", "ASP_OLX\ASP_OLX.csproj", "{2A8C27DC-543A-4FF3-9A30-F77178A7302F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP_OLX", "ASP_OLX\ASP_OLX.csproj", "{2A8C27DC-543A-4FF3-9A30-F77178A7302F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDll", "DapperDll\DapperDll.csproj", "{555513E6-8231-42D2-9BAA-E56C0A2CEFCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2A8C27DC-543A-4FF3-9A30-F77178A7302F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A8C27DC-543A-4FF3-9A30-F77178A7302F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A8C27DC-543A-4FF3-9A30-F77178A7302F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555513E6-8231-42D2-9BAA-E56C0A2CEFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555513E6-8231-42D2-9BAA-E56C0A2CEFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555513E6-8231-42D2-9BAA-E56C0A2CEFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555513E6-8231-42D2-9BAA-E56C0A2CEFCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,42 @@
+﻿@using DapperDll
+@model ASP_OLX.Models.AddProductModel
+@{
+    ViewData["Title"] = "Add Product Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <form method="post" action="/Home/Add/">
+        <div class="input-group mb-3">
+            <label for="basic-url" class="form-label me-3">Название продукта</label>
+            <input type="text" class="form-control" name="Name" />
+        </div>
+        <div class="input-group mb-3">
+            <label for="basic-url" class="form-label me-3">Описание продукта (может быть пустым)</label>
+            <textarea id="desc" type="text" class="form-control" runat="server" name="Description"></textarea>
+        </div>
+        <div class="input-group mb-3">
+            <label for="basic-url" class="form-label me-3">Цена продукта</label>
+            <input type="text" class="form-control" name="Price" />
+            <span class="input-group-text">₴</span>
+            <span class="input-group-text">0.00</span>
+        </div>
+        <div class="input-group mb-3">
+            <label class="form-label me-3" for="inputGroupSelect01">Категория</label>
+            <select class="form-select" id="inputGroupSelect01" name="Category">
+                @*<option selected>Выбрать...</option>*@
+                @foreach (Category item in Model.Categories)
+                {
+                    <option selected value=@item.Category_Id>@item.Category_Name</option>
+                }
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label for="basic-url" class="form-label me-3">Ссылки на картинки (через пробел)</label>
+            <textarea type="text" class="form-control" runat="server" name="URL"></textarea>
+        </div>
+        <div class="input-group mb-3">
+            <input type="submit" class="btn btn-primary mx-auto" value="Добавить" />
+        </div>
+    </form>
+</body>
